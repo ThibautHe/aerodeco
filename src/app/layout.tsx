@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import AnchorLink from "./_components/AnchorLink";
+import Link from "next/link";
 
 const poppins_init = Poppins({
-   subsets: ["latin"],
-   weight:['100','200','400','500','600','700'],
-   variable:"--font-poppins",
-   });
+  subsets: ["latin"],
+  weight: ["100", "200", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +22,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins_init.variable}>{children}</body>
+      <body className={poppins_init.variable}>
+        {children}
+        <footer className="bg-main-light flex justify-between font-sans font-bold text-6xl mt-10">
+          <ul className="p-4">
+            <li className="p-4 test">
+              <Link href="/realisations">
+                Realisations
+              </Link>
+            </li>
+            <li className="p-4 test">
+              <Link  href="/#devis">Devis</Link>
+            </li>
+          </ul>
+          <div className="p-8">
+            <h1>Contact</h1>
+            <p className="text-xl pt-4 font-normal">
+              mail : aerodeco@hotmail.com
+            </p>
+            <p className="text-xl pt-4 font-normal">Tel : 0494 44 44 44</p>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

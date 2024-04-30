@@ -2,3 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.test{
+    position: relative;
+    transition: 1s;
+    z-index: 0;
+}
+
+.test::before{
+    content: '';
+    top: 0;
+    left: -10%;
+    width: 115%;
+    height: 100%;
+    position: absolute;
+    background: url("/Asset5.png") 0 0 / cover no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transform: translate(-110%);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: -1;
+}
+.test:hover:before{
+    transform: translate(0);
+}
+
+.test:hover
+{
+    color: #FDD67B;
+    /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black; */
+}

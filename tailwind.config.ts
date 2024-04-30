@@ -16,7 +16,7 @@ const config: Config = {
         "center-4":'calc(50% - 5rem) 0%'
       },
       height:{
-        "110":"120vh"
+        "70":"80vh"
       },
       zIndex:{
         mz:"-10"
