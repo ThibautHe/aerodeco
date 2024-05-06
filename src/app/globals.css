@@ -11,20 +11,20 @@
 .test::before{
     content: '';
     top: 0;
-    left: -10%;
-    width: 115%;
+    left: 0;
+    width: 90%;
     height: 100%;
     position: absolute;
     background: url("/Asset5.png") 0 0 / cover no-repeat;
     background-size: 100%;
     background-position: center;
-    transform: translate(-110%);
-    transition: 1s;
+    transform: translate(-100%);
+    transition: .5s;
     transition-timing-function: ease-in-out;
     z-index: -1;
 }
 .test:hover:before{
-    transform: translate(0);
+    transform: translate(3%);
 }
 
 .test:hover
@@ -32,4 +32,15 @@
     color: #FDD67B;
     /* -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: black; */
+}
+
+.ellipse
+{
+    clip-path: ellipse(55% 100% at top center);
+}
+.ellipse2
+{
+    clip-path: ellipse(75% 100% at top center);
+    backdrop-filter: blur(10px);
+    background-color: #fdd67bc0;
 }
