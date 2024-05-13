@@ -7,6 +7,8 @@ export default function DevisInformations({
   message,
   phone,
   firstName,
+  street,
+  postcode,
 }: ContactFormInputs) {
   return (
     <>
@@ -37,6 +39,18 @@ export default function DevisInformations({
               email
             </Text>
             <Text className="mt-0 mr-4">{email}</Text>
+          </Column>
+          <Column>
+            <Text className="mb-0 text-gray-500 whitespace-nowrap text-nowrap mr-4">
+              rue
+            </Text>
+            <Text className="mt-0 mr-4">{street}</Text>
+          </Column>
+          <Column>
+            <Text className="mb-0 text-gray-500 whitespace-nowrap text-nowrap mr-4">
+              postcode
+            </Text>
+            <Text className="mt-0 mr-4">{postcode}</Text>
           </Column>
         </Row>
       </Section>

@@ -23,7 +23,6 @@ export default function Devis() {
     const result = await SendDevis(data);
 
     if (result?.success) {
-      console.log("TESTESTSET" + { data: result.data });
       toast.success("Email Sent!");
       reset();
       return;
@@ -32,7 +31,6 @@ export default function Devis() {
     console.log(result?.error);
     toast.error("something went wrong!");
   };
-
 
   return (
     <div className="bg-white  pt-10" id="devis">
@@ -84,14 +82,14 @@ export default function Devis() {
             <p>{errors.phone?.message}</p>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="phone">rue</label>
-            <input type="text" {...register("phone")} />
-            <p>{errors.phone?.message}</p>
+            <label htmlFor="street">rue</label>
+            <input type="text" {...register("street")} />
+            <p>{errors.street?.message}</p>
           </div>
           <div className="flex flex-col">
-            <label htmlFor="phone">code postal</label>
-            <input type="text" {...register("phone")} />
-            <p>{errors.phone?.message}</p>
+            <label htmlFor="postcode">code postal</label>
+            <input type="text" {...register("postcode")} />
+            <p>{errors.postcode?.message}</p>
           </div>
           <div className="flex flex-col col-span-2">
             <label htmlFor="projet">projet</label>
