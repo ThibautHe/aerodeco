@@ -5,6 +5,8 @@ import AnchorLink from "./_components/AnchorLink";
 import Link from "next/link";
 import Footer from "./_components/_dumbComponents/Footer";
 import Nav from "./_components/_dumbComponents/Nav";
+import { Toaster } from "sonner";
+import Providers from "./providers";
 
 const poppins_init = Poppins({
   subsets: ["latin"],
@@ -26,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins_init.variable}>
         <Nav></Nav>
-        {children}
+        <Providers>{children}</Providers>
         <Footer></Footer>
       </body>
     </html>

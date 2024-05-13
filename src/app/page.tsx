@@ -7,7 +7,7 @@ import Devis from "./_components/Devis";
 export default function Home() {
   return (
     <>
-      <main className="font-sans bg-main-bg bg-no-repeat bg-center-4 bg-mainBg">
+      <main className="font-sans bg-phonebg sm:bg-main-bg bg-no-repeat bg-top  bg-mainBg">
         <HomePage></HomePage>
         <RealisationsSection></RealisationsSection>
         <Devis></Devis>

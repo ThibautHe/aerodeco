@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns:{
-        "layout1":" repeat(2, minmax(0, 33%));"
+        "layout1":" repeat(2, minmax(0, 33%))",
+        "phone":" repeat(2, minmax(0, 50%))"
       },
       backgroundPosition:{
         "center-4":'calc(50% - 5rem) 0%'
@@ -31,6 +32,7 @@ const config: Config = {
       },
       backgroundImage: {
         "main-bg":"url('/bg.png')",
+        "phonebg": "url('/phonebg.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

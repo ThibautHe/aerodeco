@@ -54,7 +54,7 @@ export default function Nav() {
           variants={menuBgVariants}
           initial="hidden"
           animate={active ? "visible" : "hidden"}
-          transition={{ duration: 0.5, ease: [0.17, 0.67, 0.83, 0.67] }}
+          transition={{ duration: 0.5, ease: [0.17, 0.33, 0.67, 0.83] }}
           className="absolute flex-col gap-16 flex justify-center items-center h-screen w-screen ellipse2 bg-blend-color-burn"
         >
           <ul>

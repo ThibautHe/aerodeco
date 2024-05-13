@@ -11,11 +11,11 @@ export default function RealisationsSection() {
   return (
     <div className="mb-8">
       <h1 className="text-5xl font-bold text-center mb-16">Realisations</h1>
-      <div className="flex p-4 gap-16 justify-center">
-        <img className="w-1/3 p-4" src="/exemple/1.jpg" alt="" />
-        <img className="w-1/3 p-4" src="/exemple/2.jpg" alt="" />
+      <div className="flex flex-col sm:flex-row p-4 gap-16 justify-center items-center">
+        <img className="w-2/3 sm:w-1/3 p-4" src="/exemple/1.jpg" alt="" />
+        <img className="w-2/3 sm:w-1/3 p-4" src="/exemple/2.jpg" alt="" />
       </div>
-      <img className="m-auto my-32" src="/asset2.png" alt="" />
+      <img className="m-auto w-3/4 my-32" src="/asset2.png" alt="" />
 
       <ImageGrid title={"Avant / Apres"} images={images}></ImageGrid>
 
