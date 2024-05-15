@@ -55,7 +55,7 @@ export default function Nav() {
           initial="hidden"
           animate={active ? "visible" : "hidden"}
           transition={{ duration: 0.5, ease: [0.17, 0.33, 0.67, 0.83] }}
-          className="absolute flex-col gap-16 flex justify-center items-center h-screen w-screen ellipse2 bg-main-light/60 backdrop-blur-lg"
+          className="absolute flex-col gap-16 flex justify-center items-center h-screen w-screen ellipse2 bg-main-light md:bg-main-light/60 md:backdrop-blur-lg"
         >
           <ul>
             <li className="p-8 overflow-hidden test">
