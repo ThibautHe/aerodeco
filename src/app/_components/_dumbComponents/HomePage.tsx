@@ -6,7 +6,7 @@ export default function HomePage()
       <h1 className="text-7xl text-center font-semibold italic m-10">
         Aéro <span className="text-white">Déco</span>
       </h1>
-      <h2 className="text-3xl font-extralight">Peintre en Batiment</h2>
+      <h2 className="text-3xl font-extralight">Peintre en Bâtiment</h2>
     </div>
   </div>
 }

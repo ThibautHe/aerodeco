@@ -42,6 +42,4 @@
 .ellipse2
 {
     clip-path: ellipse(75% 100% at top center);
-    backdrop-filter: blur(10px);
-    background-color: #fdd67bc0;
 }
