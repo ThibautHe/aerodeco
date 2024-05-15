@@ -12,7 +12,7 @@ export default function Realisations() {
   return (
     <>
       <div className="bg-mainBg ellipse relative h-96 flex justify-center items-center font-sans">
-        <h1 className="font-bold text-5xl">Realisations</h1>
+        <h1 className="font-bold text-5xl">Réalisations</h1>
       </div>
       <div>
         <ImageGrid images={images}></ImageGrid>

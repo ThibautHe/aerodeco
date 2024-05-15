@@ -24,7 +24,7 @@ export default function Nav() {
     <motion.nav className="fixed flex w-full justify-between font-sans z-10 ">
       <Link href={"/"}>
         <div className="flex flex-col p-4 text-3xl font-light z-50">
-          Aero <span className="pl-4">Deco</span>
+          Aéro <span className="pl-4">Déco</span>
         </div>
       </Link>
       <motion.div
@@ -64,7 +64,7 @@ export default function Nav() {
                 href={"/realisations"}
                 className="font-bold text-5xl"
               >
-                Realisations
+                Réalisations
               </Link>
             </li>
             <li className="p-8 overflow-hidden test">

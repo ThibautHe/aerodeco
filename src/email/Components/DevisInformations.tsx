@@ -40,6 +40,8 @@ export default function DevisInformations({
             </Text>
             <Text className="mt-0 mr-4">{email}</Text>
           </Column>
+        </Row>
+        <Row>
           <Column>
             <Text className="mb-0 text-gray-500 whitespace-nowrap text-nowrap mr-4">
               rue
