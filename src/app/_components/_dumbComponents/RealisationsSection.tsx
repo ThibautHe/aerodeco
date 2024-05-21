@@ -16,7 +16,7 @@ export default function RealisationsSection() {
         <Image width={400} height={300} className=" sm:w-1/3 p-4" src="/exemple/1.jpg" alt="" />
         <Image width={400} height={300} className=" sm:w-1/3 p-4" src="/exemple/2.jpg" alt="" />
       </div>
-      <Image width={400} height={300} className="m-auto w-3/4 my-9 md:my-32" src="/asset2.png" alt="" />
+      <Image width={400} height={300} className="m-auto w-3/6 my-9 md:my-32" src="/asset2.png" alt="" />
 
       <ImageGrid title={"Avant / Après"} images={images}></ImageGrid>
 
