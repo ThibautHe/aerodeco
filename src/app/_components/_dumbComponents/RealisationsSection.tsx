@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 export default function RealisationsSection() {
   const images = [
-    "exemple/3.jpg",
-    "exemple/4.jpg",
-    "exemple/5.jpg",
-    "exemple/6.jpg",
+    "exemple/003.jpg",
+    "exemple/004.jpg",
+    "exemple/005.jpg",
+    "exemple/006.jpg",
   ];
   return (
     <div className="mb-8">
