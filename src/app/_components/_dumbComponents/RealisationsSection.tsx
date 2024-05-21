@@ -24,14 +24,14 @@ export default function RealisationsSection() {
           width={400}
           height={300}
           className=" sm:w-1/3 p-4"
-          src="/exemple/1.jpg"
+          src="/exemple/001.jpg"
           alt=""
         />
         <Image
           width={400}
           height={300}
           className=" sm:w-1/3 p-4"
-          src="/exemple/2.jpg"
+          src="/exemple/002.jpg"
           alt=""
         />
       </motion.div>
