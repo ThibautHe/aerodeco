@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 export default function RealisationsSection() {
   const images = [
-    "3.jpg",
-    "4.jpg",
-    "5.jpg",
-    "6.jpg",
+    "exemple/3.jpg",
+    "exemple/4.jpg",
+    "exemple/5.jpg",
+    "exemple/6.jpg",
   ];
   return (
     <div className="mb-8">
@@ -43,7 +43,7 @@ export default function RealisationsSection() {
         alt=""
       />
 
-      <ImageGrid prefix="/exemple" title={"Avant / Après"} images={images}></ImageGrid>
+      <ImageGrid prefix="" title={"Avant / Après"} images={images}></ImageGrid>
 
       <div className="flex justify-center items-center">
         <Link
