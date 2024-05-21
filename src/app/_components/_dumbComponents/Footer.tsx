@@ -14,7 +14,9 @@ export default function Footer() {
       <div id="contact" className="p-8">
         <h1 className=" italic font-medium">Contact</h1>
         <p className="text-xl pt-4 font-normal">mail : aerodeco@hotmail.com</p>
-        <a href="tel:0494834805" className="text-xl pt-4 font-normal">Tel : +32 477 92 31 00</a>
+        <a href="tel:+32477923100" className="text-xl pt-4 font-normal">
+          Tel : +32 477 92 31 00
+        </a>
       </div>
     </footer>
   );
