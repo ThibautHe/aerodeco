@@ -13,7 +13,7 @@ export default function Footer() {
       </ul>
       <div id="contact" className="p-8">
         <h1 className=" italic font-medium">Contact</h1>
-        <p className="text-xl pt-4 font-normal">mail : aerodeco@hotmail.com</p>
+        <a href="mailto:aerodeco@hotmail.com" className="text-xl pt-4 font-normal">Email : aerodeco@hotmail.com</a>
         <a href="tel:+32477923100" className="text-xl pt-4 font-normal">
           Tel : +32 477 92 31 00
         </a>
