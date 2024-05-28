@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-main-light h-full md:w-full md:h-96 md:flex md:flex-row items-center justify-evenly font-sans font-bold text-5xl mt-10">
+    <footer className="bg-main-light h-full md:w-full md:h-96 md:flex md:flex-row items-center justify-evenly font-sans font-bold text-5xl pt-10">
       <ul className="p-4">
         <li className="p-4 test">
           <Link href="/realisations">Réalisations</Link>

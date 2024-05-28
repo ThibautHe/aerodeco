@@ -9,12 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1921px',
+      },
       gridTemplateColumns:{
         "layout1":" repeat(2, minmax(0, 33%))",
         "phone":" repeat(2, minmax(0, 50%))"
       },
       backgroundPosition:{
-        "center-4":'calc(50% - 5rem) 0%'
+        "center-4":'calc(50% - 5rem) 0%',
+        "testbg":"50% 0% ",
+        "md-bg":"50% -1%"
       },
       height:{
         "70":"80vh"
@@ -31,8 +36,10 @@ const config: Config = {
         }
       },
       backgroundImage: {
-        "main-bg":"url('/bg.png')",
-        "phonebg": "url('/phonebg.png')",
+        "xlmain-bg":"url('/bg-test11.png')",
+        "main-bg":"url('/bg-test2.png')",
+        "devis-bg":"url('/devis-bg.png')",
+        "phonebg": "url('/phonebg-1.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

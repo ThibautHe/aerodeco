@@ -13,7 +13,7 @@ export default function ImageGrid({ prefix, title, images }: imageGridProps) {
     prefix = "";
   }
   return (
-    <div className="grid grid-cols-phone sm:grid-cols-layout1 p-4 sm:gap-16 justify-center w-full">
+    <div className="grid grid-cols-phone sm:grid-cols-layout1 gap-2 sm:gap-8 justify-center w-full">
       <h1 className="text-2xl p-4 col-span-2">{title}</h1>
       {images.map((image) => (
         <motion.div
@@ -21,11 +21,12 @@ export default function ImageGrid({ prefix, title, images }: imageGridProps) {
           initial={{ y: 110, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <Image
             width={400}
             height={400}
-            className="w-full p-4"
+            className="w-full"
             src={`${prefix}/${image}`}
             alt=""
           />

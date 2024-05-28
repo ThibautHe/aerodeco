@@ -32,8 +32,8 @@ export default function Devis() {
   };
 
   return (
-    <div className="bg-white p-4  pt-10" id="devis">
-      <div className="relative min-h-[740px] w-full sm:w-[600px] bg-main-light rounded-3xl drop-shadow-lg m-auto flex items-center flex-col justify-center">
+    <div className="bg-devis-bg bg-fixed bg-no-repeat bg-center pt-20 pb-20" id="devis">
+      <div className="relative min-h-[740px] w-full sm:w-[600px] bg-main-light rounded-3xl drop-shadow-2xl m-auto flex items-center flex-col justify-center">
         <svg
           className="rounded-3xl fill-mainBg"
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export default function Devis() {
         >
           <path d="M0,256L60,224C120,192,240,128,360,128C480,128,600,192,720,202.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
         </svg>
-        <h1 className="text-mainBg text-5xl font-bold ">
+        <h1 className="text-mainBg text-5xl font-bold mb-8 ">
           Devis Gratuit
         </h1>
         <form

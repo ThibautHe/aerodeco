@@ -17,8 +17,8 @@ export default async function SendDevis(data: ContactFormInputs) {
       result.data;
     try {
       const data = await resend.emails.send({
-        from: "Acme <onboarding@resend.dev>",
-        to: ["thibaut.hellinckx@hotmail.com"],
+        from: "admin@aerodeco.be",
+        to: ["thibaut.hellinckx@hotmail.com", "titi.bond007@hotmail.com" ,"opheliepro@outlook.be"],
         subject: "Demande Devis",
         react: DevisMail({
           firstName,
