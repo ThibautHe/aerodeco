@@ -7,6 +7,7 @@ import Footer from "./_components/_dumbComponents/Footer";
 import Nav from "./_components/_dumbComponents/Nav";
 import { Toaster } from "sonner";
 import Providers from "./providers";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins_init = Poppins({
   subsets: ["latin"],
@@ -27,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins_init.variable}>
-      <link rel="icon" href="/bg.png" sizes="any" />
+        <link rel="icon" href="/bg.png" sizes="any" />
+        <Analytics></Analytics>
 
         <Nav></Nav>
         <Providers>{children}</Providers>
