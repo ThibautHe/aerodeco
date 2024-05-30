@@ -6,7 +6,7 @@ import { Resend } from "resend";
 import { z } from "zod";
 
 type ContactFormInputs = z.infer<typeof FormDataSchema>;
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_fSrm2mkB_7PaqSaFVC2iXzfN2UYCygo3D");
 
 export default async function SendDevis(data: ContactFormInputs) {
   const result = FormDataSchema.safeParse(data);
@@ -18,7 +18,7 @@ export default async function SendDevis(data: ContactFormInputs) {
     try {
       const data = await resend.emails.send({
         from: "admin@aerodeco.be",
-        to: ["thibaut.hellinckx@hotmail.com", "titi.bond007@hotmail.com" ,"opheliepro@outlook.be"],
+        to: ["thibaut.hellinckx@hotmail.com", "titi.bond007@hotmail.com"],
         subject: "Demande Devis",
         react: DevisMail({
           firstName,
