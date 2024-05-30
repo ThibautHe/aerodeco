@@ -6,11 +6,10 @@ import { Resend } from "resend";
 import { z } from "zod";
 
 type ContactFormInputs = z.infer<typeof FormDataSchema>;
-const resend = new Resend("re_fSrm2mkB_7PaqSaFVC2iXzfN2UYCygo3D");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function SendDevis(data: ContactFormInputs) {
   const result = FormDataSchema.safeParse(data);
-  console.log("test");
 
   if (result.success) {
     const { firstName, name, email, message, phone, street, postcode } =
