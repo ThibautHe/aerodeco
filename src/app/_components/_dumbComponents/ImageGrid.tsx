@@ -14,7 +14,7 @@ export default function ImageGrid({ prefix, title, images }: imageGridProps) {
   }
   return (
     <div className="grid grid-cols-phone sm:grid-cols-layout1 gap-2 sm:gap-8 justify-center w-full">
-      <h1 className="text-2xl p-4 col-span-2">{title}</h1>
+      <h1 className="text-2xl col-span-2">{title}</h1>
       {images.map((image) => (
         <motion.div
           key={image}

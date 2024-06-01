@@ -18,8 +18,8 @@ export default function RealisationsSection() {
         initial={{ y: 110, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{once:true}}
-        className="flex flex-col sm:flex-row gap-2 sm:gap-8 justify-center items-center"
+        viewport={{ once: true }}
+        className="flex flex-col sm:flex-row gap-2 sm:gap-8 justify-center items-center p-4"
       >
         <Image
           width={400}
@@ -44,7 +44,13 @@ export default function RealisationsSection() {
         alt=""
       />
 
-      <ImageGrid prefix="" title={"Avant / Après"} images={images}></ImageGrid>
+      <div className="p-4">
+        <ImageGrid
+          prefix=""
+          title={"Avant / Après"}
+          images={images}
+        ></ImageGrid>
+      </div>
 
       <div className="flex justify-center items-center my-20">
         <Link

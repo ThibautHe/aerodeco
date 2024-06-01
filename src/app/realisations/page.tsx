@@ -10,10 +10,11 @@ export default function Realisations() {
   return (
     <>
       <div className="bg-mainBg ellipse relative h-96 flex justify-center items-center font-sans">
-        <h1 className="font-bold text-5xl">Réalisations</h1>
+        <h1 className="font-bold text-5xl text-white ">Réalisations</h1>
       </div>
-      <ImageGrid prefix="/exemple" images={files}></ImageGrid>
-      <div></div>
+      <div className="p-4">
+        <ImageGrid prefix="/exemple" images={files}></ImageGrid>
+      </div>
     </>
   );
 }
